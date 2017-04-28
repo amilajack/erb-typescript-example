@@ -114,6 +114,7 @@
   },
   "devDependencies": {
     "asar": "^0.13.0",
+    "awesome-typescript-loader": "^3.1.2",
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-jest": "^19.0.0",
@@ -174,7 +175,6 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
-    "awesome-typescript-loader": "^3.1.2",
     "electron-debug": "^1.1.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "font-awesome": "^4.7.0",

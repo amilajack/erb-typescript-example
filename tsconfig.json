@@ -2,6 +2,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
     "moduleResolution": "node"
   },
   "exclude": [
