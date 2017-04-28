@@ -1,4 +1,12 @@
 {
+  "compilerOptions": {
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules"
+  ],
   "externalTranspiler": {
     "name": "babel",
     "options": {

@@ -1,6 +1,5 @@
-// @flow
 import React, { Component } from 'react';
-import type { Children } from 'react';
+import { Children } from 'react';
 
 export default class App extends Component {
   props: {
