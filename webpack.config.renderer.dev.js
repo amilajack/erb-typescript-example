@@ -177,6 +177,12 @@ export default merge.smart(baseConfig, {
   },
 
   plugins: [
+    // @TODO: When using awesome-typescript-loader, make sure to enable this
+    // new webpack.ProvidePlugin({
+    //   'React': 'react',
+    //   'ReactDOM': 'react-dom'
+    // }),
+
     new webpack.DllReferencePlugin({
       context: process.cwd(),
       manifest: require(manifest),
@@ -191,7 +197,10 @@ export default merge.smart(baseConfig, {
       // multiStep: true
     }),
 
-    new webpack.NoEmitOnErrorsPlugin(),
+    // @TODO: If there are any typescript errors, the dev build will fail
+    //        Temporarily disabling this plugin so the dev build will work
+    //        if the codebase has typescript errors
+    // new webpack.NoEmitOnErrorsPlugin(),
 
     /**
      * Create global constants which can be configured at compile time.

@@ -12,15 +12,21 @@ export default {
   module: {
     rules: [{
       test: /\.tsx?$/,
-      // exclude: /node_modules/,
+      exclude: /node_modules/,
       use: {
-        loader: 'awesome-typescript-loader',
-        options: {
-          silent: true,
-          useBabel: true,
-          useCache: true
-        }
+        loader: 'babel-loader'
       }
+      // @TODO: Waiting until awesome-typescript-loader can throw
+      //        warnings instead of errors. This makes sure that the dev
+      //        build will work even with typescript errors
+      // use: {
+      //   loader: 'awesome-typescript-loader',
+      //   options: {
+      //     silent: true,
+      //     useBabel: true,
+      //     useCache: true
+      //   }
+      // }
     }]
   },
 

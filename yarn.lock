@@ -97,6 +97,12 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-test-renderer@^15.5.0":
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-15.5.0.tgz#2ef6052c483616b36c38b688a95a7f5da06223c3"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^15.0.24":
   version "15.0.24"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.24.tgz#8a75299dc37906df327c18ca918bf97a55e7123b"
