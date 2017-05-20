@@ -1,12 +1,12 @@
 {
   "javascript.validate.enable": false,
-  "flow.useNPMPackagedFlow": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "search.exclude": {
     ".git": true,
     "node_modules": true,
-    "flow-typed": true,
     "__snapshots__": true,
-    "bower_components": true
+    "dll": true,
+    "bower_components": true,
+    ".awcache": true
   }
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Home.css';
+import * as styles from './Home.css';
 
-export default class Home extends Component {
+export default class Home extends Component<Object, Object> {
   render() {
     return (
       <div>

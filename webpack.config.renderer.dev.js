@@ -95,7 +95,7 @@ export default merge.smart(baseConfig, {
           },
           {
             loader: 'sass-loader'
-          }
+          },
         ]
       },
       // Add SASS support  - compile all other .scss files and pipe it to style.css
@@ -116,7 +116,7 @@ export default merge.smart(baseConfig, {
           },
           {
             loader: 'sass-loader'
-          }
+          },
         ]
       },
       // WOFF Font

@@ -3,10 +3,18 @@
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
     "module": "commonjs",
-    "moduleResolution": "node"
+    "strict": true,
+    "allowJs": true,
+    // "sourceMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "app/node_modules"
   ],
   "externalTranspiler": {
     "name": "babel",
@@ -29,11 +37,7 @@
           "plugins": [
             "transform-class-properties",
             "transform-es2015-classes",
-            "react-hot-loader/babel",
-            ["flow-runtime", {
-              "assert": true,
-              "annotate": true
-            }]
+            "react-hot-loader/babel"
           ]
         }
       }
