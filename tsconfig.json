@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
     "jsx": "preserve",
+    "target": "ES6",
     "allowSyntheticDefaultImports": true,
     "module": "commonjs",
+    "noEmitOnError": true,
     "strict": true,
     "allowJs": true,
+    "pretty": true,
     // "sourceMap": true,
     "noImplicitAny": true,
     "moduleResolution": "node",

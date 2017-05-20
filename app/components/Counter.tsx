@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import * as styles from './Counter.css';
 
 interface Props {
-  increment: () => void,
-  incrementIfOdd: () => void,
-  incrementAsync: () => void,
-  decrement: () => void,
-  counter: number
-};
+  increment: () => void;
+  incrementIfOdd: () => void;
+  incrementAsync: () => void;
+  decrement: () => void;
+  counter: number;
+}
 
 class Counter extends Component<Props, Object> {
   render() {

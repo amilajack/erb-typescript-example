@@ -9,7 +9,8 @@
     "test-all": "npm run lint && npm run ts && npm run test && npm run build && npm run test-e2e",
     "test-watch": "npm test -- --watch",
     "test-e2e": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings ./test/runTests.js e2e",
-    "lint": "tslint .",
+    "lint": "tslint {app,test}/**/*.{ts,tsx}",
+    "lint-fix": "npm run lint -- --fix",
     "lint-styles": "stylelint app/*.css app/components/*.css --syntax scss",
     "hot-updates-server": "cross-env NODE_ENV=development node --trace-warnings -r babel-register ./node_modules/webpack-dev-server/bin/webpack-dev-server --config webpack.config.renderer.dev.js",
     "build": "concurrently \"npm run build-main\" \"npm run build-renderer\"",
@@ -100,19 +101,28 @@
       "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     },
     "moduleFileExtensions": [
+      "ts",
+      "tsx",
       "js"
     ],
     "moduleDirectories": [
       "node_modules",
       "app/node_modules"
     ],
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "transform": {
-      "^.+\\.js$": "babel-jest"
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     }
   },
   "devDependencies": {
     "@types/electron": "^1.4.38",
     "@types/history": "^4.5.1",
+    "@types/jest": "^19.2.3",
     "@types/node": "^7.0.21",
     "@types/react": "^15.0.24",
     "@types/react-dom": "^15.5.0",
@@ -171,6 +181,7 @@
     "style-loader": "^0.16.1",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",
+    "ts-jest": "^20.0.4",
     "ts-loader": "^2.0.3",
     "tslint": "^5.1.0",
     "tslint-config-airbnb": "^1.1.1",

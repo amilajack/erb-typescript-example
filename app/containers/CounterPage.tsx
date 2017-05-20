@@ -4,12 +4,12 @@ import Counter from '../components/Counter';
 import * as CounterActions from '../actions/counter';
 
 type stateType = {
-  counter: Object
-}
+  counter: Object,
+};
 
 function mapStateToProps(state: stateType) {
   return {
-    counter: state.counter
+    counter: state.counter,
   };
 }
 

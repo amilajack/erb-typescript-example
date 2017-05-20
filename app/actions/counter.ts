@@ -1,7 +1,7 @@
 import { counterStateType } from '../reducers/counter';
 
 type actionType = {
-  type: string
+  type: string,
 };
 
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
@@ -9,13 +9,13 @@ export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
 
 export function increment(): actionType {
   return {
-    type: INCREMENT_COUNTER
+    type: INCREMENT_COUNTER,
   };
 }
 
 export function decrement(): actionType {
   return {
-    type: DECREMENT_COUNTER
+    type: DECREMENT_COUNTER,
   };
 }
 
