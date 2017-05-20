@@ -1,9 +1,13 @@
 erb-typescript-example
 ======================
 
+[![Build Status](https://travis-ci.org/amilajack/erb-typescript-example.svg?branch=master&maxAge=2592)](https://travis-ci.org/amilajack/erb-typescript-example)
+
 ## Roadmap
 - [ ] Fix css module resolution
 - [ ] Integrate babel and typescript
+- [ ] Waiting on awesome-typescript-loader to throw warnings instead of errors
+- [ ] ESLint integration?
 
 
 ## Setup
@@ -19,4 +23,13 @@ yarn dev
 
 # Run typescript
 yarn ts
+
+# Run react tests
+yarn test
+
+# Run e2e tests
+yarn test-e2e
+
+# Run tslint
+yarn lint
 ```
