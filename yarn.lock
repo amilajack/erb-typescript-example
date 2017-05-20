@@ -26,11 +26,22 @@
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/7zip/-/7zip-0.0.6.tgz#9cafb171af82329490353b4816f03347aa150a30"
 
+"@types/cheerio@*":
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.1.tgz#740c4cd8c4d3f3074f83b9ab62e711eac2c764ce"
+
 "@types/electron@^1.4.38":
   version "1.4.38"
   resolved "https://registry.yarnpkg.com/@types/electron/-/electron-1.4.38.tgz#f3e5e58fdcd5462ee4b5817d33dfdb6700ba2415"
   dependencies:
     "@types/node" "*"
+
+"@types/enzyme@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-2.8.0.tgz#84c6204cf89831223a89ab6dc3f490b1e0886352"
+  dependencies:
+    "@types/cheerio" "*"
+    "@types/react" "*"
 
 "@types/history@*", "@types/history@^4.5.1":
   version "4.5.1"
