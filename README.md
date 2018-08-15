@@ -2,7 +2,7 @@ erb-typescript-example
 ======================
 A fork of [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate) that exemplifies using typescript.
 
-[![Build Status](https://travis-ci.org/amilajack/erb-typescript-example.svg?branch=master&maxAge=2592)](https://travis-ci.org/amilajack/erb-typescript-example)
+[![Build Status](https://travis-ci.org/amilajack/erb-typescript-example.svg?branch=master&maxAge=2592)](https://travis-ci.org/amilajack/erb-typescript-example) [![Greenkeeper badge](https://badges.greenkeeper.io/amilajack/erb-typescript-example.svg)](https://greenkeeper.io/)
 
 ## Roadmap
 - [ ] Fix css module resolution
