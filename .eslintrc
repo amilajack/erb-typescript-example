@@ -62,7 +62,7 @@
     "react/jsx-no-bind": "off",
     "react/jsx-filename-extension": [
       "error",
-      { "extensions": [".js", ".jsx"] }
+      { "extensions": [".ts", ".tsx"] }
     ],
     "react/prefer-stateless-function": "off"
   },
@@ -70,7 +70,7 @@
   "settings": {
     "import/resolver": {
       "webpack": {
-        "config": "webpack.config.eslint.js"
+        "config": "webpack.config.eslint.ts"
       }
     }
   }

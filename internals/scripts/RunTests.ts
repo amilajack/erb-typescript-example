@@ -3,8 +3,8 @@ import path from 'path';
 
 const pattern =
   process.argv[2] === 'e2e'
-    ? 'test/e2e/.+\\.spec\\.js'
-    : 'test/(?!e2e/)[^/]+/.+\\.spec\\.js$';
+    ? 'test/e2e/.+\\.spec\\.ts'
+    : 'test/(?!e2e/)[^/]+/.+\\.spec\\.ts$';
 
 const result = spawn.sync(
   path.normalize('./node_modules/.bin/jest'),
